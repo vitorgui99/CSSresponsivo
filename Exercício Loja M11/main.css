@@ -1,0 +1,209 @@
+/*Aqui zero o estilo da página */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+/* Cor de fundo do body */
+body {
+    background-color: #f0c095;
+}
+
+/* Estilização do header */
+header {
+    background-color: #69452f;
+    border-bottom: 12px solid #aa7444;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+}
+
+header h1,
+header a {
+    padding: 8px;
+    color: #fff;
+}
+
+header h1 {
+    font-size: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+header a {
+    text-decoration: none;
+    font-size: 20px;
+}
+
+header div {
+    margin-right: 24px;
+}
+
+header a:hover {
+    color: #f0c095;
+}
+
+/* Estilização da seção 'Sobre a Loja' */
+.container section {
+    color: #69452f;
+}
+
+.Sobre_a_loja h2 {
+    font-size: 32px;
+    border-bottom: 3px solid #69452f;
+    padding: 6px;
+}
+
+.Sobre_a_loja img {
+    max-width: 50%;
+    padding: 20px;
+}
+
+.Sobre_a_loja p {
+    font-size: 24px;
+    padding: 16px;
+}
+
+/* Alinhamento de imagem e parágrafo */
+.imagem_e_paragrafo {
+    display: flex;
+    align-items: center;
+}
+
+/* Definição do tamanho máximo da página */
+section {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Estilização dos Produtos */
+.Produtos h2 {
+    margin-top: 24px;
+    font-size: 32px;
+    border-bottom: 3px solid #69452f;
+    padding: 6px;
+}
+
+.Produtos nav {
+    padding: 16px;
+}
+
+.Produtos nav div {
+    padding: 6px;
+    border: 1px solid;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #aa7444;
+}
+
+.Produtos nav div a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.Produtos nav div a:hover {
+    color: #f0c095;
+}
+
+.Produtos article {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    max-width: 100%;
+}
+
+.Produtos img {
+    max-width: 225px;
+    height: 200px;
+    padding: 6px;
+}
+
+/* Rodapé */
+footer {
+    background-color: #69452f;
+    padding: 16px 0;
+    color: #fff;
+}
+
+@media screen and (max-width: 640px) {
+    header {
+        display: block;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    header h1,
+    header a {
+        display: block;
+        padding: 3px 10px;
+    }
+
+    header a {
+        display: flex;
+        text-align: center;
+    }
+
+    section {
+        max-width: 640px;
+    }
+
+    .Sobre_a_loja img {
+        max-width: 100%;
+    }
+
+    .imagem_e_paragrafo {
+        display: block;
+        text-align: center;
+    }
+
+    .Produtos article {
+        display: block;
+        text-align: center;
+    }
+
+    .Produtos img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    section {
+        max-width: 1023px;
+    }
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+/*Sobre a loja*/
+
+.Sobre_a_loja h2 {
+    text-align: center;
+}
+
+/*Produtos*/
+    .Produtos article {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        max-width: 100%;
+        justify-content: space-between;
+    }
+
+    .Produtos div nav img {
+        padding: 10px;
+    }
+
+    .Produtos h2 {
+        text-align: center;
+        border-top: 3px solid #69452f;
+    }
+}
